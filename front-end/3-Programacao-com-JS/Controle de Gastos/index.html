@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Controle de Gastos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JS -->
+    <script src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Controle de Gastos</h1>
+      <form>
+        <input id="valor" type="number" placeholder="Valor do gasto " />
+        <select id="categoria">
+          <option>Alimentação</option>
+          <option>Transporte</option>
+          <option>Lazer</option>
+          <option>Outros</option>
+        </select>
+        <button type="button">Adicionar</button>
+      </form>
+      <p id="Alimentação"></p>
+      <p id="Transporte"></p>
+      <p id="Lazer"></p>
+      <p id="Outros"></p>
+      <p id="Total"></p>
+    </main>
+  </body>
 </html>
