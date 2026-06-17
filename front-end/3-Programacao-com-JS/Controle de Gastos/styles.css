@@ -1,0 +1,93 @@
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --cor-fundo: #f5f5f0;
+  --cor-form: #5d866c;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* container principal */
+main {
+  background-color: var(--cor-fundo);
+  border: 2px solid var(--cor-form);
+  border-radius: 5px;
+  padding: 30px;
+  width: 420px;
+  max-width: 90%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--cor-form);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* formulario */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,
+select,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid var(--cor-form);
+  border-radius: 5px;
+  font-size: 16px;
+}
+input,
+select {
+  background-color: var(--cor-fundo);
+  transition: border-color 0.3s ease;
+}
+button {
+  background-color: var(--cor-form);
+  color: var(--cor-fundo);
+}
+input:focus,
+select:focus {
+  outline: 1px solid var(--cor-form);
+}
+button {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: forestgreen;
+  transform: translateY(-1px);
+}
+button:active {
+  background-color: forestgreen;
+  transform: translateY(0);
+}
+
+/* paragrafos */
+p {
+  border: 1px solid var(--cor-form);
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: rgba(23, 95, 23, 0.1);
+}
+#Total {
+  background-color: rgba(34, 139, 34, 0.438);
+}
