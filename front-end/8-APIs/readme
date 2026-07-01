@@ -1,6 +1,6 @@
 # Módulo 8 - Wep APIs
 
-# O DOM e as web APIs
+# 1 O DOM e as web APIs
 
 Manipule o DOM através de seletores;
 //----------------------------------------
@@ -18,7 +18,10 @@ Manipule o DOM através de seletores;
 
 //----------------------------------------
 
-# Eventos
+# 2 Eventos
 
 - eventos customizados;
 - prevenção de default;
+  //----------------------------------------
+
+# 3 Fetch API
