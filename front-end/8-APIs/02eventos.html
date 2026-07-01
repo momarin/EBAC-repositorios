@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      button {
+        background-color: slategrey;
+        padding: 4px;
+        border-radius: 4px;
+        height: 50px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .box {
+        border: 2px dashed black;
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+    <div class="box">
+      <h2>Click</h2>
+      <button id="btn">Evento Clique</button>
+      <button id="btn2">Evento Clique 2</button>
+    </div>
+
+    <div class="box">
+      <h3>Prevenindo ações padrões</h3>
+      <form id="meu-form">
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <hr />
+    <!-- JS -->
+    <script>
+      const btn = document.getElementById("btn");
+      const btn2 = document.getElementById("btn2");
+
+      //   click
+      btn.addEventListener("click", () => {
+        console.log("Botão clicado");
+      });
+
+      btn2.addEventListener("click", function (event) {
+        console.log("Botão 2 clicado", event.target);
+        console.log("Tipo de evento:", event.type);
+      });
+      //   --------------------------------------------------
+      const meuForm = document.getElementById("meu-form");
+      const eventoFormEnviado = new Event("formEnviado");
+
+      meuForm.addEventListener("formEnviado", function () {
+        console.log("Formulário foi enviado com sucesso!");
+        alert("Formulário enviado");
+      });
+
+      meuForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log("Processando envio...");
+
+        meuForm.dispatchEvent(eventoFormEnviado);
+      });
+    </script>
+  </body>
+</html>
