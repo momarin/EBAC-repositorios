@@ -1,1 +1,24 @@
-#Módulo 8 - Wep APIs
+# Módulo 8 - Wep APIs
+
+# O DOM e as web APIs
+
+Manipule o DOM através de seletores;
+//----------------------------------------
+
+# APIs
+
+- fetch API;
+- API ViaCEP;
+- webStorage API: armazena dados direto no browser do usuário;
+- APIs de navegador e de terceiros;
+
+1. Exemplos de API de terceiros:
+
+- Google Maps, viaCEP, Stripe API (pagamento);
+
+//----------------------------------------
+
+# Eventos
+
+- eventos customizados;
+- prevenção de default;
