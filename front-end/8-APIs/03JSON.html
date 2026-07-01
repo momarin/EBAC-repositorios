@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JSON</h1>
+
+    <script>
+      // Objeto Literal JS
+      const pessoa = {
+        nome: "Marina",
+        idade: 34,
+        ativo: true,
+      };
+
+      // JSON equivalente (é todo em string)
+      const jsonPessoa = '{"nome": "Marina", "idade": 30, "ativo": true}';
+
+      //   Convertendo de um para o outro
+      const objeto = JSON.parse('{"nome": "Marina"}');
+      console.log(objeto.nome);
+
+      const json = JSON.stringify({ nome: "Marina" });
+      console.log(json);
+    </script>
+  </body>
+</html>
