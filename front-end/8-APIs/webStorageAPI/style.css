@@ -50,7 +50,7 @@ p {
   margin: 12px 0 12px 0;
 }
 
-.escuro {
+body.escuro {
   background-color: var(--bg-escuro);
   color: var(--text-escuro);
 }
