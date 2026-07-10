@@ -39,10 +39,18 @@ button {
   border-style: none;
   font-weight: bold;
   background-color: var(--btn-claro);
+  font-size: 30px;
+  width: 72px;
+  text-align: center;
 }
 
 h1,
 h3,
 p {
   margin: 12px 0 12px 0;
+}
+
+.escuro {
+  background-color: var(--bg-escuro);
+  color: var(--text-escuro);
 }
