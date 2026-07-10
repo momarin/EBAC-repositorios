@@ -12,3 +12,7 @@
 - localStorage.getItem("chave");
 - localStorage.removeItem("chave");
 - localStorage.clear();
+
+2. Tratando erros no Fetch
+
+- fetchErros;
