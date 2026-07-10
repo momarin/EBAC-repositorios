@@ -1,15 +1,27 @@
 const btnTema = document.getElementById("btn-tema");
 
 btnTema.addEventListener("click", () => {
-  //verificando tema
-  const temaAtual = localStorage.getItem("tema");
-  //verificando que tema e invertendo
-  const novoTema = temaAtual === "escuro" ? "claro" : "escuro";
-  //adicionando a classe "escuro" ao elemento body
-  document.body.classList.toggle(novoTema);
-  //Salvar a preferência do usuário no LocalStorage
-  localStorage.setItem("tema", novoTema);
-  btnTema.textContent = novoTema === "escuro" ? "☀︎" : "☾";
+  // Alterna a classe escuro
+  document.body.classList.toggle("escuro");
+
+  // Verifica se a classe foi adicionada
+  const isEscuro = document.body.classList.contains("escuro");
+
+  // Atualiza ícone e localStorage
+  btnTema.textContent = isEscuro ? "☀︎" : "☾";
+  localStorage.setItem("tema", isEscuro ? "escuro" : "claro");
+});
+
+// Carregar tema salvo
+document.addEventListener("DOMContentLoaded", () => {
+  const temaSalvo = localStorage.getItem("tema");
+
+  if (temaSalvo === "escuro") {
+    document.body.classList.add("escuro");
+    btnTema.textContent = "☀︎";
+  } else {
+    btnTema.textContent = "☾";
+  }
 });
 
 // principais métodos
