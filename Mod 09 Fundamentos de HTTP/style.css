@@ -53,9 +53,9 @@ button {
 }
 button#add {
   background-color: var(--btn-add-color);
-  margin-left: 4px;
+  width: 35px;
 }
-button#delete {
+button.delete {
   background-color: var(--btn-delete-color);
   margin-right: 4px;
   color: white;
@@ -65,11 +65,8 @@ li {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-li span {
-  flex: 1;
   background-color: #ccc;
-  padding: 8px;
-  margin-right: 8px;
+  padding: 4px;
   border-radius: 4px;
+  margin-bottom: 4px;
 }
