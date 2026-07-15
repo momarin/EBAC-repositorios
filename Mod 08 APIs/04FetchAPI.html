@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetch API</h1>
+    <script>
+      // Estrutura básica do fetch
+      fetch(url)
+        .then((resposta) => resposta.json())
+        .then((dados) => console.log(dados))
+        .catch((erro) => console.error(erro));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+# Objetivo do exercício:
+
+    - buscar os dados dos endereços através dos respectivos CEPs utilizando fetch API
+
+# Como:
+
+1. Ouvir o evento de quando o usuário sair do campo do CEP
+2. Validar CEP
+3. Se válido, buscar no servidor ViaCEP
