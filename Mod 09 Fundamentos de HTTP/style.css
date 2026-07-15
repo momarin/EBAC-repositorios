@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 :root {
-  --bg-color: #bfc0c0c2;
-  --btn-add-color: #6487678f;
-  --btn-delete-color: rgba(255, 0, 0, 0.452);
+  --bg-color: #f1f1f1;
+  --btn-add-color: #4ba353d2;
+  --btn-delete-color: rgba(163, 9, 9, 0.884);
   --text-color: ;
 }
 body {
@@ -16,6 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #ccc;
 }
 main {
   display: flex;
@@ -32,7 +33,7 @@ form {
   width: 100%;
 }
 input {
-  height: 28px;
+  height: 32px;
   width: 90%;
   font-family: inherit;
 }
@@ -40,6 +41,8 @@ ul {
   list-style: none;
   font-size: 18px;
   font-family: inherit;
+  width: 100%;
+  padding: 0;
 }
 button {
   height: 28px;
@@ -54,4 +57,19 @@ button#add {
 }
 button#delete {
   background-color: var(--btn-delete-color);
+  margin-right: 4px;
+  color: white;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+li span {
+  flex: 1;
+  background-color: #ccc;
+  padding: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
 }
