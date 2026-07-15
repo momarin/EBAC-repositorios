@@ -9,7 +9,7 @@
    ------------------------------------------------------------//
 7. Módulo 09 Fundamentos HTTP
    ● GET, POST, PUT, DELETE;
-   ● Postman simulador (frontend) + crud:crud API (backend)
+   ● Postman simulador (frontend) + crud:crud API (backend) [Create, Read, Update and Delete]
    ◦ https://www.postman.com/
    ◦ https://crudcrud.com/
    ------------------------------------------------------------//
