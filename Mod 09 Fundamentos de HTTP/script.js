@@ -37,34 +37,35 @@ document.getElementById("add").addEventListener("click", () => {
       document.getElementById("tarefa").value = "";
     });
 });
-// ============ EVENTO DE DELETE (DELEGAÇÃO) ============
+// ============ FUNÇÃO PARA DELETAR TAREFA (async/await) ============
+async function deletarTarefa(id, elemento) {
+  try {
+    const response = await fetch(`${CrudCrudURL}/${id}`, {
+      method: "DELETE",
+    });
+
+    if (response.ok) {
+      elemento.remove();
+      console.log("✅ Tarefa deletada!");
+    } else {
+      alert("Erro ao deletar tarefa");
+    }
+  } catch (error) {
+    console.error("Erro:", error);
+    alert("Erro ao conectar com o servidor");
+  }
+}
+
+// ============ EVENTO DE DELETE ============
 tarefas.addEventListener("click", function (event) {
-  // Verifica se clicou no botão delete ou no ícone dentro dele
-  const btn = event.target.closest(".delete"); // ← MUDOU PARA CLASS
+  const btn = event.target.closest(".delete");
 
   if (btn) {
     const item = btn.closest("li");
+    const id = item.dataset.id;
 
-    if (item) {
-      const id = item.dataset.id;
-
-      if (id && confirm("Deletar esta tarefa?")) {
-        fetch(`${CrudCrudURL}/${id}`, {
-          method: "DELETE",
-        })
-          .then((response) => {
-            if (response.ok) {
-              item.remove();
-              console.log("✅ Tarefa deletada!");
-            } else {
-              alert("Erro ao deletar tarefa");
-            }
-          })
-          .catch((error) => {
-            console.error("Erro:", error);
-            alert("Erro ao conectar com o servidor.");
-          });
-      }
+    if (id && confirm("Deletar esta tarefa?")) {
+      deletarTarefa(id, item); // ← CHAMA A FUNÇÃO
     }
   }
 });
