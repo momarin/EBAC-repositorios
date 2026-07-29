@@ -42,7 +42,7 @@ valores.forEach((elemento) => {
 });
 
 console.log(somaTotal); //a soma dos 3 numeros do array valores --> 42
-//COM REDUCE
+//COM REDUCE - Reduzindo um array a um unico valor
 const array = [10, 20, 12];
 const soma = array.reduce((acumulador, numero) => acumulador + numero, 0);
 console.log(soma); // 42
@@ -56,3 +56,21 @@ console.log(maiorQue50); // false
 const arrayNumeros = [10, 20, 30, 42];
 const todosPositivos = arrayNumeros.every((n) => n > 0);
 console.log(todosPositivos); //true
+/* ------------------------------------------------------------------- */
+/* REST OPERATOR ========================================= */
+function somar(...numeros) {
+  return numeros.reduce((total, numero) => total + numero, 0);
+}
+console.log(somar(10, 20, 12));
+
+// sem Rest Operator
+function multiplicar(a, b, c) {
+  return a * b * c;
+}
+console.log(multiplicar(2, 3, 7)); // 42
+
+// com Rest Operator
+function multiplicarTudo(...numeros) {
+  return numeros.reduce((produto, numero) => produto * numero, 1);
+}
+console.log(multiplicarTudo(2, 3, 7)); // 42
