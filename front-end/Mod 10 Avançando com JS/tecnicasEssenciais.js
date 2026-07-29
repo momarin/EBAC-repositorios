@@ -47,7 +47,12 @@ const array = [10, 20, 12];
 const soma = array.reduce((acumulador, numero) => acumulador + numero, 0);
 console.log(soma); // 42
 /* ------------------------------------------------------------------- */
-/* .some() ======================================================== */
+/* .some() Algum atende à condição? ========================================= */
 const numeros = [10, 20, 30, 42];
 const maiorQue50 = numeros.some((n) => n > 50);
 console.log(maiorQue50); // false
+/* ------------------------------------------------------------------- */
+/* .every() Todos atendem à condição? ======================================= */
+const arrayNumeros = [10, 20, 30, 42];
+const todosPositivos = arrayNumeros.every((n) => n > 0);
+console.log(todosPositivos); //true
