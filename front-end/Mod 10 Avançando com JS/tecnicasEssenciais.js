@@ -46,3 +46,8 @@ console.log(somaTotal); //a soma dos 3 numeros do array valores --> 42
 const array = [10, 20, 12];
 const soma = array.reduce((acumulador, numero) => acumulador + numero, 0);
 console.log(soma); // 42
+/* ------------------------------------------------------------------- */
+/* .some() ======================================================== */
+const numeros = [10, 20, 30, 42];
+const maiorQue50 = numeros.some((n) => n > 50);
+console.log(maiorQue50); // false
