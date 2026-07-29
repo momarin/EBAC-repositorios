@@ -5,8 +5,13 @@
 3. oi
 4. oi
 5. oi
-6. oi
    ------------------------------------------------------------//
+6. Módulo 10 Avançando com JS
+   ● async;
+   ● programação funcional;
+   ● modularização, POO e Programação Funcional Prática
+   ------------------------------------------------------------//
+
 7. Módulo 09 Fundamentos HTTP
    ● GET, POST, PUT, DELETE;
    ● Postman simulador (frontend) + crud:crud API (backend) [Create, Read, Update and Delete]
