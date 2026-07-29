@@ -1,4 +1,4 @@
-# Resumo básico das aulas na ordem inversa
+# Aulas EBAC - uso exclusivo para aprendizado
 
 1. oi
 2. oi
