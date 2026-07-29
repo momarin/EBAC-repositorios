@@ -9,8 +9,15 @@
 6. Módulo 10 Avançando com JS
    ● async;
    ● programação funcional;
-   ● modularização, POO e Programação Funcional Prática
-   ------------------------------------------------------------//
+   ● Técnicas essenciais:
+   - .map();
+   - .filter();
+   - .reduce();
+   - .some();
+   - .every();
+   - Rest Operator;
+     ● modularização, POO e Programação Funcional Prática
+     ------------------------------------------------------------//
 
 7. Módulo 09 Fundamentos HTTP
    ● GET, POST, PUT, DELETE;
