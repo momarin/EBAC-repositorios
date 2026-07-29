@@ -7,7 +7,7 @@
 5. oi
    ------------------------------------------------------------//
 6. Módulo 10 Avançando com JS
-   ● async;
+   ● async await;
    ● programação funcional;
    ● Técnicas essenciais:
    - .map();
