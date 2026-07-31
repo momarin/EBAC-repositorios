@@ -19,3 +19,25 @@ export class Categoria {
     this.#valor += parseFloat(valor);
   }
 }
+
+export class ListaGastosPorCategoria {
+  #categorias;
+  // Rest Operator
+  constructor(...categorias) {
+    this.#categorias = categorias;
+  }
+  get categorias() {
+    return this.#categorias;
+  }
+  // Programação Funcional
+  obterCategoriaPorNome(nome) {
+    return this.#categorias.find((categoria) => categoria.nome === nome);
+  }
+  obterTotal() {
+    // Redução
+    return this.#categorias.reduce(
+      (total, categoria) => total + categoria.valor,
+      0,
+    );
+  }
+}
