@@ -1,4 +1,3 @@
-// array principal matriz de gastos com suas categorias e respectivos valores
 const matrizGastos = [
   ["Alimentação", 0],
   ["Transporte", 0],
@@ -6,6 +5,7 @@ const matrizGastos = [
   ["Outros", 0],
   ["Total", 0],
 ];
+
 /* ------------------------- funções utilitárias ------------------------- */
 const obterElemento = (id) => document.getElementById(id); //obter elemento
 const valorNegativo = (valor) => valor < 0;
