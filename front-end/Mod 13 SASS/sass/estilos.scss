@@ -1,0 +1,27 @@
+$cor-primaria: #ccc;
+$espacamento-padrao: 20px;
+
+.cabecalho {
+    background-color: $cor-primaria;
+    color: black;
+    padding: $espacamento-padrao;
+
+    &__titulo {
+        text-align: center;
+    }
+}
+
+.conteudo {
+    padding: $espacamento-padrao;
+
+    &__paragrafo {
+        font-size: 18px;
+    }
+    &__link {
+        color: $cor-primaria;
+        text-decoration: none;
+        &:hover {
+            color: purple;
+        }
+    }
+}
