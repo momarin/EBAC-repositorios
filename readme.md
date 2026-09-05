@@ -39,3 +39,11 @@
    - Usar apenas classes e não id ou seletores de tag;
    - Separar palavras compostas apenas com hífen, não CamelCase ou snake_case;
      ------------------------------------------------------------//
+6. Módulo 13 SASS
+   - variáveis;
+   - aninhamento;
+   - organização com parciais;
+   - módulos;
+   - mixins;
+   - herança;
+   - operadores;
